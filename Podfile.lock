@@ -1,0 +1,40 @@
+PODS:
+  - Carbon (1.0.0-rc.6):
+    - DifferenceKit/Core (~> 1.1)
+  - DifferenceKit/Core (1.2.0)
+  - RxCocoa (6.1.0):
+    - RxRelay (= 6.1.0)
+    - RxSwift (= 6.1.0)
+  - RxRelay (6.1.0):
+    - RxSwift (= 6.1.0)
+  - RxSwift (6.1.0)
+  - SwiftUIKit_pro (1.0.0):
+    - SwiftUIKit_pro/Core (= 1.0.0)
+  - SwiftUIKit_pro/Core (1.0.0)
+
+DEPENDENCIES:
+  - Carbon (= 1.0.0-rc.6)
+  - RxCocoa
+  - RxSwift
+  - SwiftUIKit_pro (= 1.0.0)
+
+SPEC REPOS:
+  trunk:
+    - Carbon
+    - DifferenceKit
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SwiftUIKit_pro
+
+SPEC CHECKSUMS:
+  Carbon: 84c3402754e682960ef85dd20a2fe44c723701d2
+  DifferenceKit: 5659c430bb7fe45876fa32ce5cba5d6167f0c805
+  RxCocoa: 5c51f02d562cbd94629f6c26cf0c80fe4ab8d343
+  RxRelay: 483e1a19fad961b41f0b0c0bee506f46c1ae14fe
+  RxSwift: a834e5c538e89eca0cae86f403f4fbf0336786ce
+  SwiftUIKit_pro: b3bcc6888f7840db0d53f0881e367401603d1290
+
+PODFILE CHECKSUM: 7a8482d6455c2f0f65ea7543835f0ffe00e66e9c
+
+COCOAPODS: 1.10.1
