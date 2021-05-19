@@ -8,7 +8,6 @@
 import UIKit
 
 import SwiftUIKit_pro
-import Carbon
 import RxSwift
 
 public struct InstanceComponent<Diff: Hashable>: IdentifiableComponent {

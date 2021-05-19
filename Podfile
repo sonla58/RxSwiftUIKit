@@ -4,10 +4,10 @@ use_frameworks!
 workspace 'RxSwiftUIKit.xcworkspace'
 
 def dependencyPod
-  pod 'Carbon', '1.0.0-rc.6'
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'SwiftUIKit_pro', '1.0.0'
+  pod 'DifferenceKit/Core', '~> 1.1'
 end
 
 

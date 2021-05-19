@@ -41,7 +41,7 @@ Pod::Spec.new do |spec|
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   
-  spec.dependency 'Carbon', '1.0.0-rc.6'
+  spec.dependency 'DifferenceKit/Core', "~> 1.1"
   spec.dependency 'RxSwift', '~> 6.1'
   spec.dependency 'RxCocoa', '~> 6.1'
   spec.dependency 'SwiftUIKit_pro', '1.0.0'

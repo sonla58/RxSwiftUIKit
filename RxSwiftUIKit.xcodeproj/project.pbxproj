@@ -11,6 +11,38 @@
 		1CB192AD2654CF8100DB405F /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB192AC2654CF8100DB405F /* GridView.swift */; };
 		1CB192B22655156A00DB405F /* InstanceComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB192B12655156A00DB405F /* InstanceComponent.swift */; };
 		1CB192B52655162200DB405F /* Rx+Declarative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB192B42655162200DB405F /* Rx+Declarative.swift */; };
+		1CB192E1265531D500DB405F /* IdentifiableComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB192B8265531D500DB405F /* IdentifiableComponent.swift */; };
+		1CB192E2265531D500DB405F /* ViewNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB192BA265531D500DB405F /* ViewNode.swift */; };
+		1CB192E3265531D500DB405F /* CellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB192BB265531D500DB405F /* CellNode.swift */; };
+		1CB192E4265531D500DB405F /* ComponentSwiftUISupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB192BD265531D500DB405F /* ComponentSwiftUISupport.swift */; };
+		1CB192E5265531D500DB405F /* UIScrollViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB192BF265531D500DB405F /* UIScrollViewExtensions.swift */; };
+		1CB192E6265531D500DB405F /* RuntimeAssociation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB192C0265531D500DB405F /* RuntimeAssociation.swift */; };
+		1CB192E7265531D500DB405F /* UICollectionViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB192C2265531D500DB405F /* UICollectionViewAdapter.swift */; };
+		1CB192E8265531D500DB405F /* UITableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB192C3265531D500DB405F /* UITableViewAdapter.swift */; };
+		1CB192E9265531D500DB405F /* Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB192C4265531D500DB405F /* Adapter.swift */; };
+		1CB192EA265531D500DB405F /* UICollectionViewFlowLayoutAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB192C5265531D500DB405F /* UICollectionViewFlowLayoutAdapter.swift */; };
+		1CB192EB265531D500DB405F /* ComponentWrapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB192C7265531D500DB405F /* ComponentWrapping.swift */; };
+		1CB192EC265531D500DB405F /* IdentifiedComponentWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB192C8265531D500DB405F /* IdentifiedComponentWrapper.swift */; };
+		1CB192ED265531D500DB405F /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB192C9265531D500DB405F /* Section.swift */; };
+		1CB192EE265531D500DB405F /* UITableViewUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB192CB265531D500DB405F /* UITableViewUpdater.swift */; };
+		1CB192EF265531D500DB405F /* UITableViewReloadDataUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB192CC265531D500DB405F /* UITableViewReloadDataUpdater.swift */; };
+		1CB192F0265531D500DB405F /* Updater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB192CD265531D500DB405F /* Updater.swift */; };
+		1CB192F1265531D500DB405F /* UICollectionViewReloadDataUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB192CE265531D500DB405F /* UICollectionViewReloadDataUpdater.swift */; };
+		1CB192F2265531D500DB405F /* UICollectionViewUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB192CF265531D500DB405F /* UICollectionViewUpdater.swift */; };
+		1CB192F3265531D500DB405F /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB192D0265531D500DB405F /* Component.swift */; };
+		1CB192F4265531D500DB405F /* AnyComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB192D1265531D500DB405F /* AnyComponent.swift */; };
+		1CB192F5265531D500DB405F /* SectionsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB192D3265531D500DB405F /* SectionsBuilder.swift */; };
+		1CB192F6265531D500DB405F /* CellsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB192D4265531D500DB405F /* CellsBuilder.swift */; };
+		1CB192F7265531D500DB405F /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB192D5265531D500DB405F /* Group.swift */; };
+		1CB192F8265531D500DB405F /* SectionsBuildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB192D6265531D500DB405F /* SectionsBuildable.swift */; };
+		1CB192F9265531D500DB405F /* CellsBuildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB192D7265531D500DB405F /* CellsBuildable.swift */; };
+		1CB192FA265531D500DB405F /* DataChangeset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB192D8265531D500DB405F /* DataChangeset.swift */; };
+		1CB192FC265531D500DB405F /* UITableViewComponentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB192DB265531D500DB405F /* UITableViewComponentCell.swift */; };
+		1CB192FD265531D500DB405F /* UICollectionViewComponentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB192DC265531D500DB405F /* UICollectionViewComponentCell.swift */; };
+		1CB192FE265531D500DB405F /* UICollectionComponentReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB192DD265531D500DB405F /* UICollectionComponentReusableView.swift */; };
+		1CB192FF265531D500DB405F /* UITableViewComponentHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB192DE265531D500DB405F /* UITableViewComponentHeaderFooterView.swift */; };
+		1CB19300265531D500DB405F /* ComponentRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB192DF265531D500DB405F /* ComponentRenderable.swift */; };
+		1CB19301265531D500DB405F /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB192E0265531D500DB405F /* Renderer.swift */; };
 		5080B774CD6F2E6F387F748C /* Pods_RxSwiftUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D445E3E9B94E2FE681717B5 /* Pods_RxSwiftUIKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,6 +53,38 @@
 		1CB192AC2654CF8100DB405F /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		1CB192B12655156A00DB405F /* InstanceComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstanceComponent.swift; sourceTree = "<group>"; };
 		1CB192B42655162200DB405F /* Rx+Declarative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rx+Declarative.swift"; sourceTree = "<group>"; };
+		1CB192B8265531D500DB405F /* IdentifiableComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifiableComponent.swift; sourceTree = "<group>"; };
+		1CB192BA265531D500DB405F /* ViewNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewNode.swift; sourceTree = "<group>"; };
+		1CB192BB265531D500DB405F /* CellNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellNode.swift; sourceTree = "<group>"; };
+		1CB192BD265531D500DB405F /* ComponentSwiftUISupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentSwiftUISupport.swift; sourceTree = "<group>"; };
+		1CB192BF265531D500DB405F /* UIScrollViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollViewExtensions.swift; sourceTree = "<group>"; };
+		1CB192C0265531D500DB405F /* RuntimeAssociation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuntimeAssociation.swift; sourceTree = "<group>"; };
+		1CB192C2265531D500DB405F /* UICollectionViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewAdapter.swift; sourceTree = "<group>"; };
+		1CB192C3265531D500DB405F /* UITableViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewAdapter.swift; sourceTree = "<group>"; };
+		1CB192C4265531D500DB405F /* Adapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
+		1CB192C5265531D500DB405F /* UICollectionViewFlowLayoutAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewFlowLayoutAdapter.swift; sourceTree = "<group>"; };
+		1CB192C7265531D500DB405F /* ComponentWrapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentWrapping.swift; sourceTree = "<group>"; };
+		1CB192C8265531D500DB405F /* IdentifiedComponentWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifiedComponentWrapper.swift; sourceTree = "<group>"; };
+		1CB192C9265531D500DB405F /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		1CB192CB265531D500DB405F /* UITableViewUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewUpdater.swift; sourceTree = "<group>"; };
+		1CB192CC265531D500DB405F /* UITableViewReloadDataUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewReloadDataUpdater.swift; sourceTree = "<group>"; };
+		1CB192CD265531D500DB405F /* Updater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Updater.swift; sourceTree = "<group>"; };
+		1CB192CE265531D500DB405F /* UICollectionViewReloadDataUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewReloadDataUpdater.swift; sourceTree = "<group>"; };
+		1CB192CF265531D500DB405F /* UICollectionViewUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewUpdater.swift; sourceTree = "<group>"; };
+		1CB192D0265531D500DB405F /* Component.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
+		1CB192D1265531D500DB405F /* AnyComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyComponent.swift; sourceTree = "<group>"; };
+		1CB192D3265531D500DB405F /* SectionsBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsBuilder.swift; sourceTree = "<group>"; };
+		1CB192D4265531D500DB405F /* CellsBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellsBuilder.swift; sourceTree = "<group>"; };
+		1CB192D5265531D500DB405F /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		1CB192D6265531D500DB405F /* SectionsBuildable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsBuildable.swift; sourceTree = "<group>"; };
+		1CB192D7265531D500DB405F /* CellsBuildable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellsBuildable.swift; sourceTree = "<group>"; };
+		1CB192D8265531D500DB405F /* DataChangeset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataChangeset.swift; sourceTree = "<group>"; };
+		1CB192DB265531D500DB405F /* UITableViewComponentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewComponentCell.swift; sourceTree = "<group>"; };
+		1CB192DC265531D500DB405F /* UICollectionViewComponentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewComponentCell.swift; sourceTree = "<group>"; };
+		1CB192DD265531D500DB405F /* UICollectionComponentReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionComponentReusableView.swift; sourceTree = "<group>"; };
+		1CB192DE265531D500DB405F /* UITableViewComponentHeaderFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewComponentHeaderFooterView.swift; sourceTree = "<group>"; };
+		1CB192DF265531D500DB405F /* ComponentRenderable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentRenderable.swift; sourceTree = "<group>"; };
+		1CB192E0265531D500DB405F /* Renderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
 		7E73B26E2BB97F00B14E3A83 /* Pods-RxSwiftUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftUIKit.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftUIKit/Pods-RxSwiftUIKit.release.xcconfig"; sourceTree = "<group>"; };
 		8D445E3E9B94E2FE681717B5 /* Pods_RxSwiftUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5FB638D9BF8CD2C8338A9F6 /* Pods-RxSwiftUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftUIKit.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftUIKit/Pods-RxSwiftUIKit.debug.xcconfig"; sourceTree = "<group>"; };
@@ -68,6 +132,7 @@
 		1CB192402653BB1C00DB405F /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				1CB192B7265531D500DB405F /* Carbon */,
 				1CB192412653BB3300DB405F /* Views */,
 				1CB192B42655162200DB405F /* Rx+Declarative.swift */,
 			);
@@ -82,6 +147,109 @@
 				1CB192B12655156A00DB405F /* InstanceComponent.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		1CB192B7265531D500DB405F /* Carbon */ = {
+			isa = PBXGroup;
+			children = (
+				1CB192B8265531D500DB405F /* IdentifiableComponent.swift */,
+				1CB192B9265531D500DB405F /* Nodes */,
+				1CB192BC265531D500DB405F /* SwiftUISupport */,
+				1CB192BE265531D500DB405F /* Internal */,
+				1CB192C1265531D500DB405F /* Adapters */,
+				1CB192C6265531D500DB405F /* ComponentWrapper */,
+				1CB192C9265531D500DB405F /* Section.swift */,
+				1CB192CA265531D500DB405F /* Updaters */,
+				1CB192D0265531D500DB405F /* Component.swift */,
+				1CB192D1265531D500DB405F /* AnyComponent.swift */,
+				1CB192D2265531D500DB405F /* FunctionBuilder */,
+				1CB192D8265531D500DB405F /* DataChangeset.swift */,
+				1CB192DA265531D500DB405F /* Interfaces */,
+				1CB192E0265531D500DB405F /* Renderer.swift */,
+			);
+			path = Carbon;
+			sourceTree = "<group>";
+		};
+		1CB192B9265531D500DB405F /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				1CB192BA265531D500DB405F /* ViewNode.swift */,
+				1CB192BB265531D500DB405F /* CellNode.swift */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
+		1CB192BC265531D500DB405F /* SwiftUISupport */ = {
+			isa = PBXGroup;
+			children = (
+				1CB192BD265531D500DB405F /* ComponentSwiftUISupport.swift */,
+			);
+			path = SwiftUISupport;
+			sourceTree = "<group>";
+		};
+		1CB192BE265531D500DB405F /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				1CB192BF265531D500DB405F /* UIScrollViewExtensions.swift */,
+				1CB192C0265531D500DB405F /* RuntimeAssociation.swift */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		1CB192C1265531D500DB405F /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				1CB192C2265531D500DB405F /* UICollectionViewAdapter.swift */,
+				1CB192C3265531D500DB405F /* UITableViewAdapter.swift */,
+				1CB192C4265531D500DB405F /* Adapter.swift */,
+				1CB192C5265531D500DB405F /* UICollectionViewFlowLayoutAdapter.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		1CB192C6265531D500DB405F /* ComponentWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				1CB192C7265531D500DB405F /* ComponentWrapping.swift */,
+				1CB192C8265531D500DB405F /* IdentifiedComponentWrapper.swift */,
+			);
+			path = ComponentWrapper;
+			sourceTree = "<group>";
+		};
+		1CB192CA265531D500DB405F /* Updaters */ = {
+			isa = PBXGroup;
+			children = (
+				1CB192CB265531D500DB405F /* UITableViewUpdater.swift */,
+				1CB192CC265531D500DB405F /* UITableViewReloadDataUpdater.swift */,
+				1CB192CD265531D500DB405F /* Updater.swift */,
+				1CB192CE265531D500DB405F /* UICollectionViewReloadDataUpdater.swift */,
+				1CB192CF265531D500DB405F /* UICollectionViewUpdater.swift */,
+			);
+			path = Updaters;
+			sourceTree = "<group>";
+		};
+		1CB192D2265531D500DB405F /* FunctionBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				1CB192D3265531D500DB405F /* SectionsBuilder.swift */,
+				1CB192D4265531D500DB405F /* CellsBuilder.swift */,
+				1CB192D5265531D500DB405F /* Group.swift */,
+				1CB192D6265531D500DB405F /* SectionsBuildable.swift */,
+				1CB192D7265531D500DB405F /* CellsBuildable.swift */,
+			);
+			path = FunctionBuilder;
+			sourceTree = "<group>";
+		};
+		1CB192DA265531D500DB405F /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				1CB192DB265531D500DB405F /* UITableViewComponentCell.swift */,
+				1CB192DC265531D500DB405F /* UICollectionViewComponentCell.swift */,
+				1CB192DD265531D500DB405F /* UICollectionComponentReusableView.swift */,
+				1CB192DE265531D500DB405F /* UITableViewComponentHeaderFooterView.swift */,
+				1CB192DF265531D500DB405F /* ComponentRenderable.swift */,
+			);
+			path = Interfaces;
 			sourceTree = "<group>";
 		};
 		AB2C96C884CE09B4CCF0483C /* Pods */ = {
@@ -205,10 +373,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CB192ED265531D500DB405F /* Section.swift in Sources */,
+				1CB192F1265531D500DB405F /* UICollectionViewReloadDataUpdater.swift in Sources */,
+				1CB192EF265531D500DB405F /* UITableViewReloadDataUpdater.swift in Sources */,
+				1CB192EA265531D500DB405F /* UICollectionViewFlowLayoutAdapter.swift in Sources */,
+				1CB192FA265531D500DB405F /* DataChangeset.swift in Sources */,
+				1CB192E9265531D500DB405F /* Adapter.swift in Sources */,
+				1CB192FD265531D500DB405F /* UICollectionViewComponentCell.swift in Sources */,
+				1CB192EE265531D500DB405F /* UITableViewUpdater.swift in Sources */,
 				1CB192B52655162200DB405F /* Rx+Declarative.swift in Sources */,
+				1CB192F9265531D500DB405F /* CellsBuildable.swift in Sources */,
 				1CB192AD2654CF8100DB405F /* GridView.swift in Sources */,
+				1CB192E6265531D500DB405F /* RuntimeAssociation.swift in Sources */,
+				1CB192F7265531D500DB405F /* Group.swift in Sources */,
+				1CB192F6265531D500DB405F /* CellsBuilder.swift in Sources */,
 				1CB192B22655156A00DB405F /* InstanceComponent.swift in Sources */,
+				1CB192F0265531D500DB405F /* Updater.swift in Sources */,
+				1CB19301265531D500DB405F /* Renderer.swift in Sources */,
+				1CB192E4265531D500DB405F /* ComponentSwiftUISupport.swift in Sources */,
+				1CB192E3265531D500DB405F /* CellNode.swift in Sources */,
+				1CB192EC265531D500DB405F /* IdentifiedComponentWrapper.swift in Sources */,
+				1CB192F5265531D500DB405F /* SectionsBuilder.swift in Sources */,
+				1CB192E1265531D500DB405F /* IdentifiableComponent.swift in Sources */,
+				1CB192E2265531D500DB405F /* ViewNode.swift in Sources */,
+				1CB192F4265531D500DB405F /* AnyComponent.swift in Sources */,
+				1CB192F2265531D500DB405F /* UICollectionViewUpdater.swift in Sources */,
+				1CB192FF265531D500DB405F /* UITableViewComponentHeaderFooterView.swift in Sources */,
+				1CB192F3265531D500DB405F /* Component.swift in Sources */,
 				1CB192912653BD3100DB405F /* ListView.swift in Sources */,
+				1CB192E8265531D500DB405F /* UITableViewAdapter.swift in Sources */,
+				1CB192E7265531D500DB405F /* UICollectionViewAdapter.swift in Sources */,
+				1CB19300265531D500DB405F /* ComponentRenderable.swift in Sources */,
+				1CB192EB265531D500DB405F /* ComponentWrapping.swift in Sources */,
+				1CB192F8265531D500DB405F /* SectionsBuildable.swift in Sources */,
+				1CB192FE265531D500DB405F /* UICollectionComponentReusableView.swift in Sources */,
+				1CB192FC265531D500DB405F /* UITableViewComponentCell.swift in Sources */,
+				1CB192E5265531D500DB405F /* UIScrollViewExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

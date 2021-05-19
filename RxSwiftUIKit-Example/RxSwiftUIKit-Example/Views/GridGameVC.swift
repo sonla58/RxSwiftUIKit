@@ -11,7 +11,6 @@ import RxSwiftUIKit
 import SwiftUIKit_pro
 import RxSwift
 import RxCocoa
-import Carbon
 
 class GridGame: UI.ViewController {
     

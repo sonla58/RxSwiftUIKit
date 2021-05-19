@@ -8,13 +8,12 @@
 import UIKit
 
 import SwiftUIKit_pro
-import Carbon
 import RxSwift
 
 /// Subclass of `UICollectionView` support build collectionView by declarative way
-public class GridView<Updater: Carbon.Updater>: UICollectionView where Updater.Adapter: UICollectionViewAdapter {
+public class GridView<Updater: RxSwiftUIKit.Updater>: UICollectionView where Updater.Adapter: UICollectionViewAdapter {
     
-    public typealias SectionBuild = () -> [Carbon.Section]
+    public typealias SectionBuild = () -> [RxSwiftUIKit.Section]
     
     public let renderer: Renderer<Updater>
     public let sections: SectionBuild
@@ -58,7 +57,7 @@ public class GridView<Updater: Carbon.Updater>: UICollectionView where Updater.A
         reloadTriggers: [Observable<Void>] = [],
         @CellsBuilder cells: @escaping () -> Cell) {
         let sections: SectionBuild = {
-            return [Carbon.Section(id: UniqueIdentifier(), cells: cells)]
+            return [RxSwiftUIKit.Section(id: UniqueIdentifier(), cells: cells)]
         }
         self.init(renderer: renderer, collectionViewLayout: collectionViewLayout, sections: sections)
         self.setTriggers(triggers: reloadTriggers)
@@ -73,7 +72,7 @@ public class GridView<Updater: Carbon.Updater>: UICollectionView where Updater.A
         @CellsBuilder cells: @escaping () -> Cell
     ) where Updater == UICollectionViewUpdater<UICollectionViewFlowLayoutAdapter> {
         let sections: SectionBuild = {
-            return [Carbon.Section(id: UniqueIdentifier(), cells: cells)]
+            return [RxSwiftUIKit.Section(id: UniqueIdentifier(), cells: cells)]
         }
         let renderer = Renderer(adapter: UICollectionViewFlowLayoutAdapter(), updater: UICollectionViewUpdater())
         self.init(renderer: renderer, collectionViewLayout: UICollectionViewFlowLayout(), sections: sections)

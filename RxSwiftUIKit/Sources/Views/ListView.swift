@@ -8,13 +8,12 @@
 import UIKit
 
 import SwiftUIKit_pro
-import Carbon
 import RxSwift
 
 /// Subclass of `UITableView` support build collectionView by declarative way
-public class ListView<Updater: Carbon.Updater>: UITableView {
+public class ListView<Updater: RxSwiftUIKit.Updater>: UITableView {
     
-    public typealias SectionBuild = () -> [Carbon.Section]
+    public typealias SectionBuild = () -> [RxSwiftUIKit.Section]
     
     public let renderer: Renderer<Updater>
     public let sections: SectionBuild
@@ -55,7 +54,7 @@ public class ListView<Updater: Carbon.Updater>: UITableView {
         reloadTriggers: [Observable<Void>] = [],
         @CellsBuilder cells: @escaping () -> Cell) {
         let sections: SectionBuild = {
-            return [Carbon.Section(id: UniqueIdentifier(), cells: cells)]
+            return [RxSwiftUIKit.Section(id: UniqueIdentifier(), cells: cells)]
         }
         self.init(renderer: renderer, style: style, sections: sections)
         self.setTriggers(triggers: reloadTriggers)
@@ -72,7 +71,7 @@ public class ListView<Updater: Carbon.Updater>: UITableView {
         @CellsBuilder cells: @escaping () -> Cell)
     where Updater == UITableViewUpdater<UITableViewAdapter> {
         let sections: SectionBuild = {
-            return [Carbon.Section(id: UniqueIdentifier(), cells: cells)]
+            return [RxSwiftUIKit.Section(id: UniqueIdentifier(), cells: cells)]
         }
         let renderer = Renderer(adapter: UITableViewAdapter(), updater: UITableViewUpdater())
         self.init(renderer: renderer, style: style, sections: sections)
