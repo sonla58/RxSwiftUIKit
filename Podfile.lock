@@ -6,15 +6,15 @@ PODS:
   - RxRelay (6.1.0):
     - RxSwift (= 6.1.0)
   - RxSwift (6.1.0)
-  - SwiftUIKit_pro (1.0.0):
-    - SwiftUIKit_pro/Core (= 1.0.0)
-  - SwiftUIKit_pro/Core (1.0.0)
+  - SwiftUIKit_pro (1.1.0):
+    - SwiftUIKit_pro/Core (= 1.1.0)
+  - SwiftUIKit_pro/Core (1.1.0)
 
 DEPENDENCIES:
   - DifferenceKit/Core (~> 1.1)
   - RxCocoa
   - RxSwift
-  - SwiftUIKit_pro (= 1.0.0)
+  - SwiftUIKit_pro (~> 1.1.0)
 
 SPEC REPOS:
   trunk:
@@ -29,8 +29,8 @@ SPEC CHECKSUMS:
   RxCocoa: 5c51f02d562cbd94629f6c26cf0c80fe4ab8d343
   RxRelay: 483e1a19fad961b41f0b0c0bee506f46c1ae14fe
   RxSwift: a834e5c538e89eca0cae86f403f4fbf0336786ce
-  SwiftUIKit_pro: b3bcc6888f7840db0d53f0881e367401603d1290
+  SwiftUIKit_pro: d783b1b753bc07d577147bda29d5138f4c745a70
 
-PODFILE CHECKSUM: 71849ae711ce21950b8d7425768c94c616f23ee4
+PODFILE CHECKSUM: 1b2a632928cbd23b59c849a931132b1beec6807b
 
 COCOAPODS: 1.10.1

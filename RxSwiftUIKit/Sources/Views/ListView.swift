@@ -87,9 +87,11 @@ public class ListView<Updater: RxSwiftUIKit.Updater>: UITableView {
     public convenience init(
         renderer: Renderer<Updater>,
         style: UITableView.Style,
-        reloadTriggers: [Observable<Void>] = [],
+        reloadTriggers: [Observable<Void>],
         sections: Section...) {
-        self.init(renderer: renderer, style: style, sections: sections)
+        self.init(renderer: renderer, style: style) { () -> [Section] in
+            return sections
+        }
         self.setTriggers(triggers: reloadTriggers)
     }
     
@@ -103,8 +105,11 @@ public class ListView<Updater: RxSwiftUIKit.Updater>: UITableView {
         renderer: Renderer<Updater>,
         style: UITableView.Style,
         reloadTriggers: [Observable<Void>] = [],
-        sections: C) where C.Element == Section? {
-        self.init(renderer: renderer, style: style, sections: sections.compactMap { $0 })
+        sections: C
+    ) where C.Element == Section? {
+        self.init(renderer: renderer, style: style) { () -> [Section] in
+            return sections.compactMap { $0 }
+        }
         self.setTriggers(triggers: reloadTriggers)
     }
     
@@ -118,8 +123,10 @@ public class ListView<Updater: RxSwiftUIKit.Updater>: UITableView {
         renderer: Renderer<Updater>,
         style: UITableView.Style,
         reloadTriggers: [Observable<Void>] = [],
-        @SectionsBuilder sectionBuilder: () -> S) {
-        self.init(renderer: renderer, style: style, sections: sectionBuilder().buildSections())
+        @SectionsBuilder sectionBuilder: @escaping () -> S) {
+        self.init(renderer: renderer, style: style) { () -> [Section] in
+            sectionBuilder().buildSections()
+        }
         self.setTriggers(triggers: reloadTriggers)
     }
     
@@ -128,9 +135,15 @@ public class ListView<Updater: RxSwiftUIKit.Updater>: UITableView {
     ///   - style: provide `UITableView.Style` for ListView
     ///   - reloadTriggers: list of `RxSwift.Observable<Void>` to notice ListView reload data. Once one of triggers receive `next` event, ListView will be reload data
     ///   - sections: A block build a collection of `Carbon.Section`
-    public convenience init(style: UITableView.Style, reloadTriggers: [Observable<Void>] = []) where Updater == UITableViewUpdater<UITableViewAdapter> {
+    public convenience init<S: SectionsBuildable>(
+        style: UITableView.Style,
+        reloadTriggers: [Observable<Void>] = [],
+        @SectionsBuilder sectionBuilder: @escaping () -> S
+    ) where Updater == UITableViewUpdater<UITableViewAdapter> {
         let renderer = Renderer(adapter: UITableViewAdapter(), updater: UITableViewUpdater())
-        self.init(renderer: renderer, style: style, sections: [])
+        self.init(renderer: renderer, style: style) { () -> [Section] in
+            sectionBuilder().buildSections()
+        }
         self.setTriggers(triggers: reloadTriggers)
     }
     
