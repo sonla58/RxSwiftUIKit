@@ -60,7 +60,7 @@ ListView(style: .plain, reloadTriggers: [self.items.map { _ in Void() }]) {
 
 Add following line to your project's Podfile
 ```ruby
-pod 'RxSwiftUIKit', '1.0.0'
+pod 'RxSwiftUIKit', '~> 1.1.0'
 ```
 Run `pod install` to install SwiftUIKit
 
